@@ -574,7 +574,7 @@ function Linux.Create(config)
     
     local Main = Linux.Instance("Frame", {
         Parent = LinuxUI,
-        BackgroundColor3 = Color3.fromRGB(38, 38, 38),
+        BackgroundColor3 = Color3.fromRGB(8, 8, 8),
         BorderColor3 = Color3.fromRGB(39, 39, 42),
         BackgroundTransparency = 0.05,
         BorderSizePixel = 1,
@@ -735,7 +735,7 @@ function Linux.Create(config)
     
     local TabsBar = Linux.Instance("Frame", {
         Parent = Main,
-        BackgroundColor3 = Color3.fromRGB(38, 38, 38),
+        BackgroundColor3 = Color3.fromRGB(8, 8, 8),
         BackgroundTransparency = 1,
         Position = UDim2.new(0, 0, 0, 30),
         Size = UDim2.new(0, config.TabWidth or 130, 1, -30),
@@ -898,7 +898,7 @@ function Linux.Create(config)
     local minimizedSize = UDim2.new(0, uiSize.X.Offset, 0, 30)
     
     MinimizeButton.MouseEnter:Connect(function()
-        TweenService:Create(MinimizeButton, TweenInfo.new(0.2), {ImageColor3 = Color3.fromRGB(220, 220, 230)}):Play()
+        TweenService:Create(MinimizeButton, TweenInfo.new(0.2), {ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
     end)
     
     MinimizeButton.MouseLeave:Connect(function()
@@ -928,7 +928,7 @@ function Linux.Create(config)
     end)
     
     CloseButton.MouseEnter:Connect(function()
-        TweenService:Create(CloseButton, TweenInfo.new(0.2), {ImageColor3 = Color3.fromRGB(220, 220, 230)}):Play()
+        TweenService:Create(CloseButton, TweenInfo.new(0.2), {ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
     end)
     
     CloseButton.MouseLeave:Connect(function()
@@ -1108,7 +1108,7 @@ function Linux.Create(config)
         
         local TitleFrame = Linux.Instance("Frame", {
             Parent = Content,
-            BackgroundColor3 = Color3.fromRGB(38, 38, 38),
+            BackgroundColor3 = Color3.fromRGB(8, 8, 8),
             BackgroundTransparency = 1,
             Size = UDim2.new(1, 0, 0, 50),
             Position = UDim2.new(0, 0, 0, 0),
@@ -1161,7 +1161,7 @@ function Linux.Create(config)
         
         local Container1 = Linux.Instance("ScrollingFrame", {
             Parent = ContainersWrapper,
-            BackgroundColor3 = Color3.fromRGB(38, 38, 38),
+            BackgroundColor3 = Color3.fromRGB(8, 8, 8),
             BackgroundTransparency = 1,
             Size = UDim2.new(0.5, -4, 1, 0),
             CanvasSize = UDim2.new(0, 0, 0, 0),
@@ -1190,7 +1190,7 @@ function Linux.Create(config)
         
         local Container2 = Linux.Instance("ScrollingFrame", {
             Parent = ContainersWrapper,
-            BackgroundColor3 = Color3.fromRGB(38, 38, 38),
+            BackgroundColor3 = Color3.fromRGB(8, 8, 8),
             BackgroundTransparency = 1,
             Size = UDim2.new(0.5, -4, 1, 0),
             CanvasSize = UDim2.new(0, 0, 0, 0),
